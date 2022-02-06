@@ -184,9 +184,10 @@ header .header-1 .searchMobile{
     flex-direction: column;
     padding: 1rem 5%;
     width: 100%;
-    top: -1000%;
+    top: -1000px;
     position: absolute;
     transition: 1s;
+    z-index: 400;
 }
 
 .sidenav ul{
@@ -220,7 +221,7 @@ header .header-1 .searchMobile{
 
 /* Sidenav Active */
 .sidenav.active{
-    top: 60px;
+    top: 0;
     transition: 1s;
 }
 
