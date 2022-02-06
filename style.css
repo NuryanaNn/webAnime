@@ -1,0 +1,324 @@
+:root{
+    --black:#444;
+    --white:#fff;
+    --light-gray:#eee;
+    --blue:blue;
+    --body-bg:#1a1a1a;
+    --content:#222222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 9000px;
+    background: var(--body-bg);
+}
+
+section{
+    padding: 3rem 6%;
+}
+
+header{
+    padding: 1rem 6%;
+    background: var(--blue);
+    z-index: 100;
+    position: relative
+}
+
+header .header-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Burger Menu */
+header .header-1 .burger{
+    cursor: pointer;
+    display: none;
+}
+
+header .header-1 .burger .bars1{
+    width: 30px;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--light-gray);
+    margin-bottom: 4px;
+    transition: 1s;
+}
+
+header .header-1 .burger .bars2{
+    width: 30px;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--light-gray);
+    margin-bottom: 4px;
+    transition: 1s;
+}
+
+header .header-1 .burger .bars3{
+    width: 30px;
+    height: 3px;
+    border-radius: 4px;
+    background: var(--light-gray);
+    margin-bottom: 4px;
+    transition: 1s;
+}
+header .header-1 .burger .bars1.change{
+    transform: rotate(45deg) translateY(10px);
+    transition: 1s;
+}
+
+header .header-1 .burger .bars2.change{
+    visibility: hidden;
+    transition: .1s;
+}
+
+header .header-1 .burger .bars3.change{
+    transform: rotate(-45deg) translateY(-10px);
+    transition: 1s;
+}
+/* End Burger */
+
+/* Logo Samehadaku */
+header .header-1 .logo{
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+/* Search bar */
+header .header-1 ul{
+    list-style: none;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+header .header-1 .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+/* End Search */
+
+/* Header input */
+header .header-1 .search{
+    position: relative;
+}
+
+header .header-1 .search input{
+    height: 35px;
+    width: 250px;
+    border: 1px solid var(--light-gray);
+}
+
+header .header-1 .search .fa-search{
+    top: 10px;
+    right: 20px;
+    position: absolute;
+}
+
+header .header-1 input{
+    background: #444;
+    position: relative;
+}
+/* End Input */
+
+
+/* Toggle Dark */
+header .header-1 .toggleDarkLight{
+    background: var(--light-gray);
+    height: 22px;
+    width: 70px;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .header-1 .toggleDarkLight::before{
+    content: '';
+    background: var(--black);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: var(--black);
+    border-radius: 50%;
+}
+
+/* Bagian Navbar Desktop */
+header .header-1 .navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header .header-1 .navbar ul li a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 25px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+header .header-1 .searchMobile{
+    display: none;
+}
+
+header .header-1 .searchMobile{
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/* Side Navbar */
+.sidenav{
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5%;
+    width: 100%;
+    top: -100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.sidenav ul{
+    list-style: none;
+}
+
+.sidenav .listAnime ul{
+    padding-left: 7%;
+}
+
+.sidenav .listAnime ul li{
+    color: var(--light-gray);
+    border: none;
+}
+
+.sidenav .listAnime ul li a{
+    font-size: 1.2rem;
+}
+
+.sidenav ul li{
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.sidenav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+/* Sidenav Active */
+.sidenav.active{
+    top: 60px;
+    transition: 1s;
+}
+
+
+/* Section Banner image */
+.bannerTop{
+    background: var(--body-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bannerTop .contentBanner{
+    background: var(--content);
+    padding: 30px;
+    position: relative;
+    width: 960px;
+    overflow: hidden;
+}
+
+.bannerTop .contentBanner h3{
+    position: absolute;
+    top: 3px;
+    color: var(--light-gray);
+    text-transform: capitalize;    
+    
+}
+
+.banneranime .box{
+    width: 25rem;
+    margin: 2rem -.3rem;
+    position: relative;
+    overflow:hidden;
+    border: var(--border);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.bannerTop .contentSider{
+    background: var(--content);
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1115px){
+    header .header-1 .burger{
+        display: block;
+    }
+
+    header .header-1 .logo{
+        margin-left: 25%;
+    }
+
+    header .header-1 .search{
+        display: none;
+    }
+
+    header .header-1 .toggleDarkLight{
+        display: none;
+    }
+
+    header .header-1 .navbar{
+        display: none;
+    }
+
+    header .header-1 .searchMobile{
+        display: block;
+    }
+
+    .contentSider{
+        display: none;
+    }
+}
+
+
+@media(max-width:486px){
+    header .header-1 .logo{
+        margin-left: 10%;
+    }
+
+}
