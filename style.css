@@ -5,6 +5,8 @@
     --blue:blue;
     --body-bg:#1a1a1a;
     --content:#222222;
+    --primary-font:#b7b7b7;
+    --muted-font:#888888;
 }
 
 *{
@@ -241,7 +243,7 @@ header .header-1 .searchMobile{
     background: var(--content);
     padding: 10px;
     position: relative;
-    width: 960px;
+    width: 900px;
     overflow: hidden;
 }
 
@@ -269,12 +271,12 @@ header .header-1 .searchMobile{
     text-align: center;
     padding: 5px;
     margin: 5px 5px;
-    width: 10rem;
+    max-width: 10rem;
 }
 
 .bannerAnime .boxContent .contentImg{
     height: 15rem;
-    width: 100%;
+    width: 10rem;
     position: relative;
     object-fit: cover;
 }
@@ -288,17 +290,28 @@ header .header-1 .searchMobile{
 .bannerAnime .boxContent .contentImg .overlay span{
     position: absolute;
     display: none;
+    color: var(--muted-font);
 }
+
 
 .bannerAnime .boxContent:hover .contentImg .overlay span{
     display: block;
 }
 
+.bannerAnime .boxContent .contentText{
+    margin-top: 10px;
+    text-align: left;
+}
 
+.bannerAnime .boxContent .contentText h4{
+    color: var(--primary-font);
+    text-transform: capitalize;
+}
 
-
-
-
+.bannerAnime .boxContent .contentText p{
+    color: var(--muted-font);
+    text-transform: capitalize;
+}
 
 .bannerAnime .boxContent:hover .contentImg .overlay{
     background-color: rgba(185, 218, 220, .9);
@@ -324,6 +337,7 @@ header .header-1 .searchMobile{
 .bannerTop .contentSider{
     background: var(--content);
     padding: 20px;
+    width: 270px;
 }
 
 
@@ -368,6 +382,19 @@ header .header-1 .searchMobile{
     .contentSider{
         display: none;
     }
+
+    .bannerAnime .boxContent .contentImg{
+        height: 15rem;
+        width: 10rem;
+    }
+}
+
+
+@media(max-width:768px){
+    .bannerAnime .boxContent .contentImg{
+        height: 10rem;
+        width: 10rem;
+    }
 }
 
 
@@ -375,5 +402,4 @@ header .header-1 .searchMobile{
     header .header-1 .logo{
         margin-left: 10%;
     }
-
 }
