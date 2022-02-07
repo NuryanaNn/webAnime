@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Inter:wght@200&family=Neonderthaw&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
 :root{
     --black:#444;
     --white:#fff;
@@ -18,6 +20,10 @@
 body{
     height: 9000px;
     background: var(--body-bg);
+    ffont-family: 'Dongle', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Neonderthaw', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 section{
@@ -318,6 +324,8 @@ header .header-1 .searchMobile{
     text-align: left;
     position: relative;
     height: 6rem;
+    overflow: hidden;
+    padding: 5px;
 }
 
 .bannerAnime .boxContent .contentText h4{
@@ -327,6 +335,7 @@ header .header-1 .searchMobile{
     top: 0;
     left: 0;
     width: 400px;
+    font-size: .9rem;
 }
 
 .bannerAnime .boxContent .contentText p{
@@ -335,6 +344,7 @@ header .header-1 .searchMobile{
     position:absolute;
     top: 19px;
     left: 0;
+    font-size: .8rem;
 }
 /* End Banner 1 ( Swiper js ) */
 
@@ -354,7 +364,7 @@ header .header-1 .searchMobile{
 
 .bannerAnime .boxContent .contentImg .rating{
     position: absolute;
-    top: 88%;
+    top: 86%;
 }
 
 .bannerAnime .boxContent .contentImg .rating span{
@@ -456,7 +466,7 @@ header .header-1 .searchMobile{
 
 /* Second banner */
 .secondBanner{
-    margin-top: -20rem;
+    margin-top: -24rem;
     display: flex;
     justify-content: space-between;
 }
@@ -580,7 +590,7 @@ header .header-1 .searchMobile{
     }
 
     .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
-        left:6rem ;
+        left:5.5rem ;
     }
 
     .secondBanner .secondContent .contentBx{
