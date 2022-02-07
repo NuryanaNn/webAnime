@@ -27,7 +27,10 @@ const swiper = new Swiper(".bannerAnime", {
             slidesPerView: 1,
         },
         300:{
-            slidesPerView: 2,
+            slidesPerView: 1,
+        },
+        320:{
+            slidesPerView: 1,
         },
         398:{
             slidesPerView: 2,
@@ -35,14 +38,17 @@ const swiper = new Swiper(".bannerAnime", {
         450:{
             slidesPerView: 2,
         },
-        450:{
+        500:{
+            slidesPerView: 2,
+        },
+        680:{
             slidesPerView: 3,
         },
         730: {
-            slidesPerView: 5,
+            slidesPerView: 4,
         },
         768: {
-            slidesPerView: 5,
+            slidesPerView: 4,
         },
         800: {
             slidesPerView: 4,
@@ -51,7 +57,24 @@ const swiper = new Swiper(".bannerAnime", {
             slidesPerView: 4,
         },
         1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
+        },
+    },
+});
+
+const secondSwiper = new Swiper(".box", {
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disabledonINteraction: false,
+    },
+    breakpoints: {
+        700: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2,
         },
     },
 });

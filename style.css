@@ -276,6 +276,7 @@ header .header-1 .searchMobile{
     padding: 5px;
     margin: 5px 5px;
     max-width: 10rem;
+    margin-top: 15px;
 }
 
 .bannerAnime .boxContent .contentImg{
@@ -340,6 +341,41 @@ header .header-1 .searchMobile{
     display: flex;
     align-items: center;
 }
+
+.bannerAnime .boxContent .contentImg .rating{
+    position: absolute;
+    top: 88%;
+}
+
+.bannerAnime .boxContent .contentImg .rating span{
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.bannerAnime .boxContent .contentImg .rating span:nth-child(1){
+    color: var(--white);
+    background: orange;
+    padding: 3px;
+    position: absolute;
+    left:0;
+}
+
+.bannerAnime .boxContent .contentImg .rating span:nth-child(2){
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 3px;
+    left:6.5rem ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.bannerAnime .boxContent .contentImg .rating span:nth-child(2) i{
+    color: var(--white);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 3px;
+    color: yellow;
+}
 /* End Overlay Banner 1 */
 
 /* Content Sider */
@@ -376,6 +412,13 @@ header .header-1 .searchMobile{
 
 .bannerTop .contentSider .siderAnime .content .image{
     margin-right: 3px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.bannerTop .contentSider .siderAnime .content .image:hover img{
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .bannerTop .contentSider .siderAnime .content h4{
@@ -404,8 +447,37 @@ header .header-1 .searchMobile{
 /* Second banner */
 .secondBanner{
     margin-top: -20rem;
+    display: flex;
+    justify-content: space-between;
 }
 
+.secondBanner .secondContent{
+    background: var(--content);
+    padding: 10px;
+    width: 900px;
+}
+
+.secondBanner .secondContent .contentBx{
+    width: 450px;
+    background: var(--white);
+    height: 250px;
+}
+
+.secondBanner .secondContent .contentBx .images{
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+
+.secondBanner .secondContent .contentBx .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.scondbannerhide{
+    width: 0px;
+    visibility: hidden;
+}
 
 
 
@@ -448,10 +520,6 @@ header .header-1 .searchMobile{
         display: none;
     }
 
-    .bannerAnime .boxContent .contentImg{
-        height: 15rem;
-        width: 10rem;
-    }
 
     /* Second banner */
     .secondBanner{
@@ -469,6 +537,24 @@ header .header-1 .searchMobile{
     .bannerTop .contentBanner{
         height: 17rem;
     }
+
+    .bannerAnime .boxContent .contentImg .rating{
+        top: 80%;
+    }
+
+    .bannerAnime .boxContent .contentImg .rating span:nth-child(1){
+        left:5px;
+    }
+
+    .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
+        left:5.9rem ;
+    }
+
+    .secondBanner .secondContent .contentBx{
+        width: 400px;
+        height: 200px;
+    }
+    
 }
 
 
@@ -477,8 +563,17 @@ header .header-1 .searchMobile{
         margin-left: 10%;
     }
 
-    .bannerAnime .boxContent .contentImg{
-        height: 9rem;
-        width: 9rem;
+    .bannerAnime .boxContent .contentImg .rating span:nth-child(1){
+        left:5px;
     }
+
+    .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
+        left:6rem ;
+    }
+
+    .secondBanner .secondContent .contentBx{
+        width: 150px;
+        height: 150px;
+    }
+    
 }
