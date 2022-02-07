@@ -24,13 +24,13 @@ const swiper = new Swiper(".banneranime", {
     },
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
         },
         450:{
             slidesPerView: 3,
         },
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         1024: {
             slidesPerView: 5,

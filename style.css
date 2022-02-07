@@ -239,7 +239,7 @@ header .header-1 .searchMobile{
 
 .bannerTop .contentBanner{
     background: var(--content);
-    padding: 30px;
+    padding: 10px;
     position: relative;
     width: 960px;
     overflow: hidden;
@@ -247,19 +247,38 @@ header .header-1 .searchMobile{
 
 .bannerTop .contentBanner h3{
     position: absolute;
-    top: 3px;
+    top: 5px;
+    left:6px;
     color: var(--light-gray);
     text-transform: capitalize;    
-    
+    position: relative;
+}
+
+.bannerTop .contentBanner h3:before{
+    content: '';
+    background: var(--light-gray);
+    width: 100%;
+    height: .6px;
+    position: absolute;
+    bottom: 0;
+
 }
 
 .banneranime .box{
     width: 25rem;
-    margin: 2rem -.3rem;
+    margin: 2rem 1rem;
     position: relative;
     overflow:hidden;
     border: var(--border);
     text-align: center;
+}
+
+.banneranime .box .image{
+    width: 100%;
+}
+
+.banneranime .box .image img{
+    width: 100%;
 }
 
 
