@@ -562,6 +562,7 @@ header .header-1 .searchMobile{
 /* List anime */
 .listAnime{
     margin-top: -15px;
+    position: relative;
 }
 
 .lists{
@@ -721,7 +722,7 @@ header .header-1 .searchMobile{
     .listAnime .lists .content{
         display: flex;
         flex-direction: column;
-        padding: 10px 20px;
+        padding: 10px 5px;
     }
 
     .lists{
@@ -729,7 +730,9 @@ header .header-1 .searchMobile{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
         max-width: 900px;
+        padding: 2px; 
     }
+    
 
     
 }
