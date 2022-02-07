@@ -19,17 +19,23 @@ const swiper = new Swiper(".banneranime", {
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 900,
+        delay: 2000,
         disabledonINteraction: false,
     },
     breakpoints: {
         0: {
-            slidesPerView: 2,
+            slidesPerView: 1,
+        },
+        280:{
+            slidesPerView: 1,
         },
         450:{
             slidesPerView: 3,
         },
         768: {
+            slidesPerView: 3,
+        },
+        900: {
             slidesPerView: 3,
         },
         1024: {
