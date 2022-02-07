@@ -23,41 +23,17 @@ const swiper = new Swiper(".bannerAnime", {
         disabledonINteraction: false,
     },
     breakpoints: {
-        200:{
-            slidesPerView: 1,
-        },
-        300:{
-            slidesPerView: 1,
-        },
-        320:{
-            slidesPerView: 1,
-        },
-        398:{
+        340:{
             slidesPerView: 2,
         },
-        450:{
-            slidesPerView: 2,
-        },
-        500:{
-            slidesPerView: 2,
-        },
-        680:{
+        550:{
             slidesPerView: 3,
         },
-        730: {
-            slidesPerView: 4,
-        },
-        768: {
-            slidesPerView: 4,
-        },
-        800: {
+        700:{
             slidesPerView: 4,
         },
         900: {
-            slidesPerView: 4,
-        },
-        1024: {
-            slidesPerView: 4,
+            slidesPerView: 5,
         },
     },
 });

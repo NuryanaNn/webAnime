@@ -258,6 +258,17 @@ header .header-1 .searchMobile{
     position: relative;
 }
 
+.bannerTop .contentBanner .cprevnext1{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+}
+
+.bannerTop .contentBanner .cprevnext1 a{
+    color: var(--primary-font);
+    font-size: .8rem;
+}
+
 .bannerTop .contentBanner h3:before{
     content: '';
     background: var(--light-gray);
@@ -274,8 +285,7 @@ header .header-1 .searchMobile{
     overflow:hidden;
     text-align: center;
     padding: 5px;
-    margin: 5px 5px;
-    max-width: 10rem;
+    width: 100px;
     margin-top: 15px;
 }
 
@@ -459,14 +469,12 @@ header .header-1 .searchMobile{
 
 .secondBanner .secondContent .contentBx{
     width: 450px;
-    background: var(--white);
     height: 250px;
 }
 
 .secondBanner .secondContent .contentBx .images{
     width: 100%;
     height: 100%;
-    background: var(--white);
 }
 
 .secondBanner .secondContent .contentBx .images img{
@@ -558,9 +566,13 @@ header .header-1 .searchMobile{
 }
 
 
-@media(max-width:486px){
+@media(max-width:480px){
     header .header-1 .logo{
         margin-left: 10%;
+    }
+
+    .bannerAnime .boxContent{
+        width: 20px;
     }
 
     .bannerAnime .boxContent .contentImg .rating span:nth-child(1){
