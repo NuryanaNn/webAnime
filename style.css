@@ -262,47 +262,56 @@ header .header-1 .searchMobile{
     bottom: 0;
 }
 
-.banneranime .box{
-    width: 25rem;
-    margin: 2rem 1rem;
+
+.bannerAnime .boxContent{
     position: relative;
     overflow:hidden;
-    border: var(--border);
     text-align: center;
+    padding: 5px;
+    margin: 5px 5px;
+    width: 10rem;
 }
 
-.banneranime .box .contentBx{
-    height: 20rem;
-    background: #fff;
+.bannerAnime .boxContent .contentImg{
+    height: 15rem;
+    width: 100%;
     position: relative;
+    object-fit: cover;
 }
 
-.banneranime .box .contentBx .image:hover .overlay{
+.bannerAnime .boxContent .contentImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bannerAnime .boxContent .contentImg .overlay span{
+    position: absolute;
+    display: none;
+}
+
+.bannerAnime .boxContent:hover .contentImg .overlay span{
+    display: block;
+}
+
+
+
+
+
+
+
+.bannerAnime .boxContent:hover .contentImg .overlay{
     background-color: rgba(185, 218, 220, .9);
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
+    position: absolute;
     height: 100%;
+    transition: 1s;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-
-.banneranime .image{
-    width: 100%;
-    height: 100%;
-
-}
-
-.banneranime .box .image img{
-    width: 100%;
-    height: 100%;
-}
-
-.banneranime .box .content{
-    position: relative;
-    top: 20px;
-    text-align: left;
-}
-
 
 
 

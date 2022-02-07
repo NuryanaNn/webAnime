@@ -15,7 +15,7 @@ burger.addEventListener('click', function(){
 	sidenav.classList.toggle('active')
 })
 
-const swiper = new Swiper(".banneranime", {
+const swiper = new Swiper(".bannerAnime", {
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -23,20 +23,17 @@ const swiper = new Swiper(".banneranime", {
         disabledonINteraction: false,
     },
     breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        280:{
-            slidesPerView: 1,
+        398:{
+            slidesPerView: 2,
         },
         450:{
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         768: {
             slidesPerView: 3,
         },
         900: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
         1024: {
             slidesPerView: 5,
