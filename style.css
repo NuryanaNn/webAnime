@@ -24,6 +24,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-family: 'Neonderthaw', cursive;
     font-family: 'Poppins', sans-serif;
+    transition: all 1s;
 }
 
 section{
@@ -466,7 +467,7 @@ header .header-1 .searchMobile{
 
 /* Second banner */
 .secondBanner{
-    margin-top: -24rem;
+    margin-top: -23rem;
     display: flex;
     justify-content: space-between;
 }
@@ -558,6 +559,35 @@ header .header-1 .searchMobile{
     color: yellow;
 }
 
+/* List anime */
+.listAnime{
+    margin-top: -15px;
+}
+
+.lists{
+    background: var(--content);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+    padding: 20px; 
+    max-width: 900px;
+}
+
+.listAnime .lists .content{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.listAnime .lists .content .images{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -613,6 +643,13 @@ header .header-1 .searchMobile{
     .secondBanner{
         margin-top: -5rem;
     }
+
+    .lists{
+        background: var(--content);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+        max-width: 900px;
+    }
     
 }
 
@@ -642,11 +679,24 @@ header .header-1 .searchMobile{
         width: 400px;
         height: 250px;
     }
+
+    .lists{
+        background: var(--content);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        max-width: 900px;
+    }
+
+    .listAnime .lists .content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
     
 }
 
 
-@media(max-width:480px){
+@media(max-width:498px){
     header .header-1 .logo{
         margin-left: 10%;
     }
@@ -667,5 +717,19 @@ header .header-1 .searchMobile{
         width: 150px;
         height: 250px;
     }
+
+    .listAnime .lists .content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .lists{
+        background: var(--content);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+        max-width: 900px;
+    }
+
     
 }
