@@ -564,6 +564,7 @@ header .header-1 input{
     visibility: hidden;
 }
 
+/* label & rating */
 .secondBanner .secondContent .contentBx .images .watch{
     top: 10px;
     left: 10px;
@@ -581,7 +582,6 @@ header .header-1 input{
     text-transform: capitalize;
     cursor: default;
 }
-
 
 .secondBanner .secondContent .contentBx .images .watch i{
     margin-right: 10px;
@@ -615,6 +615,7 @@ header .header-1 input{
     cursor: pointer;
 }
 
+/* label tv */
 .secondBanner .secondContent .contentBx .images .label{
     position: absolute;
     background: orange;
@@ -627,11 +628,14 @@ header .header-1 input{
     cursor: default;
     font-size: .8rem;
 }
+/* End label tv */
 
 .secondBanner .secondContent .contentBx .images .watch span:nth-child(3) i{
     color: var(--label-color);
 }
+/* end rating */
 
+/* Overlay gradient */
 .secondBanner .secondContent .contentBx .images .overlayGradient{
     background: linear-gradient(rgba(217, 217, 217, .9), rgba(0, 0, 0, .9));
     width: 100%;
@@ -640,9 +644,9 @@ header .header-1 input{
     top: 0;
     opacity: 40%;
 }
+/* End overlay */
 
 /* List anime */
-
 .listAnime{
     margin-top: -50px;
 }
@@ -654,6 +658,7 @@ header .header-1 input{
     position: relative;
 }
 
+/* Pagging */
 .listAnime .contentAnime .paging{
     align-items: center;
     display: flex;
@@ -682,6 +687,7 @@ header .header-1 input{
     font-size: .8rem;
     text-decoration: none;
 }
+/* End pagging */
 
 .listAnime .contentAnime h3{
     color: var(--primary-font);
@@ -702,7 +708,6 @@ header .header-1 input{
     flex-direction: row;
     padding: 2px;
 }
-
 
 .listAnime .contentAnime .contentBox .cards .contentText h4 a{
     text-decoration: none;
@@ -742,6 +747,10 @@ header .header-1 input{
     height: 100%;
 }
 
+.bannerBottom{
+    margin-top: -60px;
+}
+
 .footer{
     margin-top: -30px;
 }
@@ -750,6 +759,160 @@ header .header-1 input{
     color: var(--white);
     text-align: center;
 }
+/* ==================================================end page index.html====================================================== */
+
+/* ==================================================page list_anime ==========================================================*/
+
+.listed{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.listed .contentListAnime{
+    background: var(--content);
+    width: 900px;
+    padding: 20px;
+    position: relative;
+}
+
+.listed .contentListAnime h3{
+    color: var(--primary-font);
+}
+
+.listed .contentListAnime .descriptionAnime{
+    margin-top: 50px;
+}
+
+.listed .contentListAnime .descriptionAnime .contentBox .image{
+    width: 80px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.listed .contentListAnime .descriptionAnime .contentBox .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.listed .contentListAnime .descriptionAnime .contentBox{
+    display: flex;
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.listed .contentListAnime .descriptionAnime .contentBox:before{
+    content: '';
+    height: 1px;
+    width: 96%;
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-font);
+}
+
+.listed .contentListAnime .descriptionAnime .contentBox .contentText{
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.listed .contentListAnime .descriptionAnime .contentBox .contentText h4{
+    color: var(--primary-font);
+    text-transform: capitalize;
+}
+
+.listed .contentListAnime .descriptionAnime .contentBox .contentText p{
+    color: var(--primary-font);
+}
+
+/* List a - z */
+.listed .contentListAnime .contentListAnimeBox{
+    background: var(--content);
+    position: relative;
+}
+
+.listed .contentListAnime .contentListAnimeBox::before{
+    background: var(--primary-font);
+    content:'';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+}
+
+.listed .contentListAnime .contentListAnimeBox ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listed .contentListAnime .contentListAnimeBox ul li{
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: var(--primary-font);
+    background: var(--black);
+    border-radius: 5px;
+}
+
+.listed .contentListAnime .contentListAnimeBox ul li a{
+    color: var(--primary-font);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.listed .descriptionAnime .contentBox .contentText h4 a{
+    color: var(--primary-font);
+    text-decoration: none;
+}
+
+.listed .descriptionAnime .contentBox .contentText p{
+    font-size: .8rem;
+}
+
+.listed .contentSider{
+    background: var(--content);
+    width: 270px;
+    padding: 30px;
+    height: 400px;
+    overflow: hidden;
+    display: block;
+}
+
+.listed .contentSider h3{
+    color: var(--primary-font);
+    text-transform: capitalize;
+}
+
+.listed .contentSider .siderAnime .content{
+    position: relative;
+}
+
+.listed .contentSider .siderAnime .content ul{
+    list-style: none;
+}
+
+.listed .contentSider .siderAnime .content ul li{
+    margin-top: 8px;
+}
+
+.listed .contentSider .siderAnime .content ul li a{
+    color: var(--primary-font);
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.listed .contentSider .siderAnime .content ul li a i{
+    margin-right: 20px;
+    cursor: default;
+}
+
+.listed .contentSider .siderAnime .content ul li a span{
+    position: absolute;
+    right: 0;
+}
 
 
 
@@ -764,10 +927,8 @@ header .header-1 input{
 
 
 
-
-
-
-
+/* ==================================================page list_anime ==========================================================*/
+/* =====================================================media query=========================================================== */
 @media(max-width:1115px){
     header .header-1 .burger{
         display: block;
@@ -800,6 +961,18 @@ header .header-1 input{
     /* Second banner */
     .secondBanner{
         margin-top: -5rem;
+    }
+
+    /*==================== page list anime=============== */
+    .listed .contentListAnime{
+        background: var(--content);
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+
+    .listed .contentSider{
+        width: 100%;
     }
 
 }
