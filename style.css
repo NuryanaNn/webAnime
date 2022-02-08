@@ -547,7 +547,7 @@ header .header-1 .searchMobile{
     font-weight: 300;
     text-transform: capitalize;
     background: #ec1313;
-    width: 115px;
+    width: 125px;
     cursor: pointer;
 }
 
@@ -617,10 +617,12 @@ header .header-1 .searchMobile{
     position: relative;
     margin-right: 10px;
     width: 150px;
-    height: 150px;
+    height: 100px;
 }
 
 .listAnime .contentAnime .contentBox .cards .images img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -738,18 +740,18 @@ header .header-1 .searchMobile{
         max-width: 900px;
     }
 
-    .listAnime .contentAnime .contentBox .cards .contentText{
-        margin-top: -20px;
+    .listAnime .contentAnime .contentBox .cards .images{
+        position: relative;
+        margin-right: 10px;
+        width: 110px;
+        height: 90px;
+    }
+
+    .listAnime .contentAnime .contentBox .cards .contentText h4{
+        width: 110px;
         overflow: hidden;
     }
+
 }
 
-@media(max-width:390px){
-    .listAnime .contentAnime .contentBox{
-        position: relative;
-        display: grid;
-        grid-template-columns: auto;
-        grid-row-gap: 20px;
-    }
-}
 
