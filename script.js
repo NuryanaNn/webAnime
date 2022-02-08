@@ -2,7 +2,9 @@ let burger = document.querySelector('.burger');
 let bars1 = document.querySelector('.bars1');
 let bars2 = document.querySelector('.bars2');
 let bars3 = document.querySelector('.bars3');
-let sidenav = document.querySelector('.sidenav')
+let sidenav = document.querySelector('.sidenav');
+let searchMobile = document.querySelector('.searchMobile');
+let hiddenSearch = document.querySelector('.hiddenSearch');
 
 
 burger.addEventListener('click', function(){
@@ -13,6 +15,10 @@ burger.addEventListener('click', function(){
 
 burger.addEventListener('click', function(){
 	sidenav.classList.toggle('active')
+})
+
+searchMobile.addEventListener('click', function(){
+    hiddenSearch.classList.toggle('change')
 })
 
 const swiper = new Swiper(".bannerAnime", {

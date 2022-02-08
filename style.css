@@ -33,9 +33,10 @@ section{
 
 header{
     padding: 1rem 6%;
-    background: var(--blue);
+    background: var(--label-color);
     z-index: 100;
-    position: relative
+    position: relative;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .9);
 }
 
 header .header-1{
@@ -124,7 +125,12 @@ header .header-1 .search{
 header .header-1 .search input{
     height: 35px;
     width: 250px;
-    border: 1px solid var(--light-gray);
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    border-bottom: 1px solid var(--primary-font);
+    color: var(--white);
 }
 
 header .header-1 .search .fa-search{
@@ -134,7 +140,7 @@ header .header-1 .search .fa-search{
 }
 
 header .header-1 input{
-    background: #444;
+    background: var(--primary-font);
     position: relative;
 }
 /* End Input */
@@ -194,7 +200,7 @@ header .header-1 .searchMobile{
     flex-direction: column;
     padding: 1rem 5%;
     width: 100%;
-    top: -1000px;
+    top: -1500px;
     position: absolute;
     transition: 1s;
     z-index: 100;
@@ -221,6 +227,12 @@ header .header-1 .searchMobile{
 .sidenav ul li{
     margin-bottom: 30px;
     border-bottom: 1px solid var(--light-gray);
+    margin-top: 50px;
+}
+
+.sidenav ul li:hover{
+    background: var(--label-color);
+    transition: 1s;
 }
 
 .sidenav ul li a{
@@ -235,6 +247,53 @@ header .header-1 .searchMobile{
     top: 70px;
     transition: 1s;
     z-index: 100;
+}
+
+.sidenav ul{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.hiddenSearch{
+    background: var(--content);
+    padding: 2rem 8%;
+    position: relative;
+    top: -100px;
+    display: none;
+    transition: 1s;
+}
+
+.hiddenSearch.change{
+    top: 0px;
+    display: block;
+    transition: 1s;
+}
+
+.hiddenSearch ul{
+    list-style: none;
+}
+
+.hiddenSearch input{
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    border-bottom: 1px solid var(--primary-font);
+    color: var(--white);
+}
+
+.hiddenSearch .fa-search{
+    top: 40px;
+    right: 30px;
+    position: absolute;
+    color: var(--white);
+}
+
+header .header-1 input{
+    background: var(--primary-font);
+    position: relative;
 }
 
 
