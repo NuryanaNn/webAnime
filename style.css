@@ -19,7 +19,6 @@
 }
 
 body{
-    height: 9000px;
     background: var(--body-bg);
     font-family: 'Dongle', sans-serif;
     font-family: 'Inter', sans-serif;
@@ -381,6 +380,7 @@ header .header-1 .searchMobile{
     position: absolute;
     font-size: .8rem;
     left:6px;
+    text-transform: uppercase;
 }
 
 .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
@@ -561,7 +561,7 @@ header .header-1 .searchMobile{
     top: 10px;
     padding: 10px;
     border-radius: 5px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     cursor: default;
     font-size: .8rem;
 }
@@ -683,6 +683,15 @@ header .header-1 .searchMobile{
     height: 100%;
 }
 
+.footer{
+    margin-top: -30px;
+}
+
+.footer p{
+    color: var(--white);
+    text-align: center;
+}
+
 
 
 
@@ -785,7 +794,7 @@ header .header-1 .searchMobile{
     }
 
     .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
-        left:6rem ;
+        left:5rem ;
     }
 
     .secondBanner .secondContent .contentBx{
