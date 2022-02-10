@@ -1048,18 +1048,10 @@ header .header-1 input{
     text-transform: capitalize;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-around;
     text-align: left;
 }
 
-.infosAnime .animeInfo .content .tableInfo tr::before{
-    content:'';
-    position:absolute;
-    width:97%;
-    height:1px;
-    left: 10px;
-    background:var(--primary-font);
-}
 
 .infosAnime .animeInfo .content .tableInfo .table2{
     margin-top: 25px;
@@ -1222,12 +1214,6 @@ header .header-1 input{
     /* Page 3 */
     .infosAnime .animeInfo .content .tableInfo .table1 td{
         text-align: right;
-    }
-
-    .infosAnime .animeInfo .content .tableInfo .table1{
-        margin-left: -20px;
-        position: relative;
-        padding: 0 30px 0 20px;
     }
 
     .infosAnime .animeInfo .content .tableInfo .table2{
