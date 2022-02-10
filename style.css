@@ -991,7 +991,16 @@ header .header-1 input{
     max-width: 500px;
     max-height: 450px;
     overflow: auto;
+}
 
+.banners .bannerBox .bigBanner .content::-webkit-scrollbar{
+    width: 1px;
+}
+.banners .bannerBox .bigBanner .content::-webkit-scrollbar-track{
+    background: var(--primary-font);
+}
+.banners .bannerBox .bigBanner .content::-webkit-scrollbar-thumb{
+    background: var(--content);
 }
 
 .banners .bannerBox .bigBanner .content h1{
@@ -1031,6 +1040,29 @@ header .header-1 input{
     color: var(--primary-font);
     padding: 20px;
     position: relative;
+}
+
+.infosAnime .animeInfo .content .tableInfo{
+    align-items:center;
+    flex-wrap:wrap;
+    text-transform: capitalize;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    text-align: left;
+}
+
+.infosAnime .animeInfo .content .tableInfo tr::before{
+    content:'';
+    position:absolute;
+    width:97%;
+    height:1px;
+    left: 10px;
+    background:var(--primary-font);
+}
+
+.infosAnime .animeInfo .content .tableInfo .table2{
+    margin-top: 25px;
 }
 
 
@@ -1185,6 +1217,27 @@ header .header-1 input{
     .listAnime .contentAnime .contentBox .cards .contentText h4{
         width: 110px;
         overflow: hidden;
+    }
+
+    /* Page 3 */
+    .infosAnime .animeInfo .content .tableInfo .table1 td{
+        text-align: right;
+    }
+
+    .infosAnime .animeInfo .content .tableInfo .table1{
+        margin-left: -20px;
+        position: relative;
+        padding: 0 30px 0 20px;
+    }
+
+    .infosAnime .animeInfo .content .tableInfo .table2{
+        margin-left: -20px;
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+
+    .infosAnime .animeInfo .content .tableInfo .table2 td{
+        text-align: right;
     }
 }
 
