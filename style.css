@@ -372,6 +372,13 @@ header .header-1 input{
     object-fit: cover;
 }
 
+.bannerAnime .boxContent .contentImg .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
 .bannerAnime .boxContent .contentImg .overlay span{
     position: absolute;
     display: none;
@@ -380,6 +387,14 @@ header .header-1 input{
 
 .bannerAnime .boxContent:hover .contentImg .overlay span{
     display: block;
+}
+
+.bannerAnime .boxContent .contentImg .rating{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 .bannerAnime .boxContent .contentText{
@@ -430,11 +445,6 @@ header .header-1 input{
     align-items: center;
 }
 
-.bannerAnime .boxContent .contentImg .rating{
-    position: absolute;
-    top: 86%;
-}
-
 .bannerAnime .boxContent .contentImg .rating span{
     text-transform: capitalize;
     border-radius: 5px;
@@ -445,8 +455,9 @@ header .header-1 input{
     background: var(--label-color);
     padding: 3px;
     position: absolute;
-    font-size: .8rem;
+    font-size: .9rem;
     left:6px;
+    bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -454,15 +465,15 @@ header .header-1 input{
     color: var(--white);
     background: rgba(0, 0, 0, 0.9);
     padding: 3px;
-    left:6.5rem ;
     position: absolute;
     display: flex;
     align-items: center;
+    bottom: 10px;
+    right: 12px;
 }
 
 .bannerAnime .boxContent .contentImg .rating span:nth-child(2) i{
     color: var(--white);
-    background: rgba(0, 0, 0, 0.9);
     padding: 3px;
     color: var(--label-color);
 }
@@ -1119,6 +1130,134 @@ video{
 }
 
 
+/* Page 4 Season */
+.season {
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.season .contentBanner{
+    background: var(--content);
+    padding: 30px;
+    width: 900px;
+    color: var(--primary-font);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.season .contentBanner .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.season .contentBanner .wrapper .boxContent .contentImg{
+    position: relative;
+}
+
+.season .contentBanner .wrapper .boxContent .contentImg img{
+    position: relative;
+    width: 100%;
+}
+
+.season .contentBanner .wrapper .boxContent .contentImg .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.season .contentBanner .wrapper .boxContent .contentImg .overlay span{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+
+.season .contentBanner .wrapper .boxContent .rating{
+    height: 100%;
+    width: 100%;
+}
+
+.season .contentBanner .wrapper .boxContent .rating span:nth-child(1){
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    background: var(--label-color);
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.season .contentBanner .wrapper .boxContent .rating span:nth-child(2){
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--label-color);
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+.season .contentBanner .wrapper .boxContent .contentText h4 a{
+    color: var(--primary-font);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.season .contentBanner .wrapper .boxContent .contentText p{
+    color: var(--primary-font);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: .8rem;
+}
+
+.season .contentSider{
+    background: var(--content);
+    width: 270px;
+    padding: 30px;
+    color: var(--primary-font);
+    position: absolute;
+    right: 6%;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.season .contentSider .content ul{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.season .contentSider .content ul li a i{
+    margin-right: 20px;
+    font-size: .5rem;
+}
+
+.season .contentSider .content ul li a{
+    color: var(--primary-font);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.season .contentSider .content{
+    height: 300px;
+    display: relative;
+    overflow: auto;
+}
+
+
+.season .contentSider .content::-webkit-scrollbar{
+    width: 1px;
+}
+.season .contentSider .content::-webkit-scrollbar-track{
+    background: var(--primary-font);
+}
+.season .contentSider .content::-webkit-scrollbar-thumb{
+    background: var(--content);
+}
 
 
 
@@ -1135,10 +1274,6 @@ video{
 @media(max-width:1115px){
     header .header-1 .burger{
         display: block;
-    }
-
-    header .header-1 .logo{
-        margin-left: 25%;
     }
 
     header .header-1 .search{
@@ -1181,6 +1316,9 @@ video{
     .listed .contentSider{
         width: 100%;
     }
+
+    /* Page 4 */
+
 }
 
 @media(max-width:857px){
@@ -1197,18 +1335,6 @@ video{
     }
     .bannerTop .contentBanner{
         height: 17rem;
-    }
-
-    .bannerAnime .boxContent .contentImg .rating{
-        top: 80%;
-    }
-
-    .bannerAnime .boxContent .contentImg .rating span:nth-child(1){
-        left:5px;
-    }
-
-    .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
-        left:6rem ;
     }
 
     .secondBanner .secondContent .contentBx{
@@ -1261,14 +1387,6 @@ video{
         width: 20px;
     }
 
-    .bannerAnime .boxContent .contentImg .rating span:nth-child(1){
-        left:5px;
-    }
-
-    .bannerAnime .boxContent .contentImg .rating span:nth-child(2){
-        left:5rem ;
-    }
-
     .secondBanner .secondContent .contentBx{
         width: 150px;
         height: 250px;
@@ -1308,8 +1426,15 @@ video{
         position: relative;
     }
 
-    .video{
-        margin-top: -250px;
+    /* page 4 */
+    .season .contentBanner .wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .season .contentBanner .wrapper .boxContent .rating span:nth-child(2){
+        right: 0;
     }
 }
 
